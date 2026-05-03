@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            background-color: aquamarine;
+            border: 5px solid hotpink;
+            height: 250px;
+            width: 300px;
+            
+             position: relative;
+            animation-name: rightMovement;
+        animation-duration: 5s;
+        animation-iteration-count:2;
+        animation-delay: 1s;
+        animation-direction: alternate-reverse;
+        animation-timing-function: ease-in-out;
+    
+             }
+        
+        .box{
+            background-color: antiquewhite;
+            border: 10px solid greenyellow;
+           
+
+        }
+    
+        @keyframes rightMovement{
+            from{
+                top: 0;
+                left: 0;
+            }
+            to{
+                top: 0;
+                left: 1300px;
+            }
+        }
+        .container1{
+           margin-top: 200px;
+            background-color: aquamarine;
+            border: 5px solid hotpink;
+            height: 250px;
+            width: 300px;
+            
+             position: relative;
+            animation-name: rightMovement;
+        animation-duration: 5s;
+        animation-iteration-count:2;
+        animation-delay: 1s;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+    
+        }
+        .circle{
+            width: 100px;
+            height: 100px;
+            border-radius: 70px;
+            border: 10px solid steelblue;
+            background-color: aqua;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+           justify-content: center;
+           margin: auto;
+            position: relative;
+            animation-name: circleMovement;
+        animation-duration: 5s;
+        animation-iteration-count:2;
+        animation-delay: 1s;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        }
+        @keyframes circleMovement{
+            0%{
+                top: 0%;
+                left: 5%;
+            }
+            30%{
+                top: 5%;
+                left: 10%;
+            }
+            60%{
+              top: 10%;
+                left: 15%;
+            }
+            100%{
+                top: 15%;
+                left: 20%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+       <img src="https://chatgpt.com/backend-api/estuary/content?id=file_0000000033707207912a26b389abbd10&ts=493815&p=fs&cid=1&sig=7dce776cedd96bd98d965b90036f67514eda5b68e7f7e3d97a767a20e484c318&v=0" alt="">
+    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore mollitia, 
+        cum corrupti aperiam amet reiciendis, molestiae 
+        architecto magnam dolorum minus, voluptatem dicta! Ut maxime distinctio nih
+        il atque neque! Quam, quibusdam!</p></div>
+        
+    </div>
+    <div class="circle">Sejal
+
+    </div>
+     <div class="container1">
+        <div class="box">
+       <img src="https://chatgpt.com/backend-api/estuary/content?id=file_0000000033707207912a26b389abbd10&ts=493815&p=fs&cid=1&sig=7dce776cedd96bd98d965b90036f67514eda5b68e7f7e3d97a767a20e484c318&v=0" alt="">
+    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore mollitia, 
+        cum corrupti aperiam amet reiciendis, molestiae 
+        architecto magnam dolorum minus, voluptatem dicta! Ut maxime distinctio nih
+        il atque neque! Quam, quibusdam!</p></div>
+        
+    </div>
+</body>
+</html>

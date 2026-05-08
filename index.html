@@ -4,66 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .card2{
+    width: 200px;
+    height: 250px;
+    position: relative;
+
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.card2:hover{
+    transform: perspective(1000px) rotateY(180deg);
+}
+
+.front2, .back2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    backface-visibility: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.front2{
+    background: purple;
+}
+
+.back2{
+    background: orange;
+    transform: rotateY(180deg);
+}
+    </style>
 </head>
 <body>
-    <h1>University Registration form</h1>
-    <p>please fill out the form</p>
-    <hr>
- <h3><b>Personal Details</b></h3>
- <label for="First name"><b>First name:</b> </label>
- <input type="text" placeholder="e.g:Sejal">
- <br>
- <br>
- <label for="last name"> Last name:</label>
- <input type="text" name="name" id="last name" placeholder="e.g yadav">
- <br>
- <br>
- <label for="DOB">DOB :</label>
- <input type="date" name="" id="" >
- <br>
- <br>
- <p><b>Gender</b></p>
- <label for="Male">Male</label>
- <input type="radio" name="gender" id="Male">
- <br>
- <br>
- <label for="female">Female</label>
- <input type="radio" name="gender" id="Female">
- <br>
- <br><label for="other">other</label>
- <input type="radio" name="Gender" id="other">
-<h3><b>Upload your photo</b></h3>
-<input type="file" name="" id="" >
-<hr>
-<h2>Contact Information</h2><br>
-<br>
-<label for="Email address">Email Addresss</label>
-<input type="email" name="" id=""><br>
-<br>
-<label for="Phone">phone</label>
-<input type="number" name="" id=""><br>
-<br>
-<label for="Mailling address" >mailing address</label>
-<textarea name="address" id="address" role="20" cols="40"></textarea>
-<hr>
-<h3>Academic Information</h3>
-<label for="Selact your Course">Select your Course :</label>
-<select name="course" id="course">
-    <option value="CSE">CSE</option>
-    <option value="CSE">IT</option>
-    <option value="CSE">CE</option>
-    <option value="CSE">ME</option>
-</select>
-<h3><b>Extracurricular Activities</b></h3>
-<label for="Sports">Sports:</label>
-<input type="checkbox" name="Activiy" id="Sporst" value="Sports">
-<br><br>
-<label for="Music">Music:</label>
-<input type="checkbox" name="Activiy" id="Music" value="Music"><br><br>
-<label for="Technology">Technology:</label>
-<input type="checkbox" name="Activiy" id="Technology" value="Technology"><br><br>
-<label for="Volunterning">Volunterning:</label>
-<input type="checkbox" name="Activiy" id="Volunterning" value="Volunterning">
-<input type="register" name="" id="">
+    <div class="card2">
+  <div class="front2">Front</div>
+  <div class="back2">Back</div>
+</div>
+ <div class="card2">
+  <div class="front2">Front</div>
+  <div class="back2">Back</div>
+</div>
 </body>
 </html>
